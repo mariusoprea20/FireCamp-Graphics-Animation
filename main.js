@@ -254,7 +254,7 @@ createSmallBuilding(scene);
  */
 console.log("create flag");
 var plane = null;
-var planeGeom = new THREE.PlaneBufferGeometry(20, 10, 30, 30); 
+var planeGeom = new THREE.PlaneGeometry(20, 10, 30, 30); 
 //create flag function
 function createFlag(scene){
     const geomStick = new THREE.CylinderGeometry( 1, 1, 40, 60 );
@@ -327,7 +327,7 @@ function wave(geometry, cycle, height, frmOffset) {
   let cloudParticles = [];
 
   loader.load("./textures/smoke.png", function(texture){
-  var cloudGeo= new THREE.PlaneBufferGeometry(700,700);
+  var cloudGeo= new THREE.PlaneGeometry(700,700);
   var cloudMaterial = new THREE.MeshLambertMaterial({
     map:texture,
     transparent: true,
